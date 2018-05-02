@@ -1,0 +1,21 @@
+{
+  "name": "vue-cli-locale-pt",
+  "version": "0.0.9",
+  "description": "Portuguese localization for @vue/cli",
+  "unpkg": "./locales/pt.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmatalonga/vue-cli-locale-pt.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vue-cli",
+    "locale"
+  ],
+  "author": "Hugo Matalonga <dev@hmatalonga.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hmatalonga/vue-cli-locale-pt/issues"
+  },
+  "homepage": "https://github.com/hmatalonga/vue-cli-locale-pt#readme"
+}
