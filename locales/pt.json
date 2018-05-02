@@ -1,7 +1,7 @@
 {
   "components": {
     "file-diff": {
-      "binary": "Ficheiro binário não mostrado",
+      "binary": "Ficheiro binário não exibido",
       "actions": {
         "open": "Abrir no editor"
       }
@@ -12,8 +12,8 @@
       "empty": "Nenhuma alteração encontrada",
       "modals": {
         "commit": {
-          "title": "Commit alterações",
-          "input": "Enter a commit message",
+          "title": "Validar alterações",
+          "input": "Digite uma mensagem de commit",
           "subtitle": "Guadar alterações no repositório",
           "actions": {
             "commit": "Commit",
@@ -24,7 +24,7 @@
       "actions": {
         "collapse-all": "Fechar tudo",
         "expand-all": "Expandir tudo",
-        "commit": "Commit alterações",
+        "commit": "Validar alterações",
         "skip": "Saltar",
         "continue": "Continuar",
         "refresh": "Atualizar"
@@ -33,22 +33,22 @@
     "folder-explorer": {
       "toolbar": {
         "tooltips": {
-          "parent-folder": "Open parent folder",
+          "parent-folder": "Abrir pasta pai",
           "edit-path": "Editar caminho",
-          "favorite": "Toggle favorite",
-          "favorite-folders": "Favorite folders",
+          "favorite": "Adicionar/Remover de favoritos",
+          "favorite-folders": "Pastas de favoritos",
           "refresh": "Atualizar"
         },
-        "placeholder": "Enter the full path to a folder",
-        "empty": "No favorite folders yet."
+        "placeholder": "Digite o caminho completo para uma pasta",
+        "empty": "Não existem pastas de favoritos."
       }
     },
     "list-item-info": {
-      "more-info": "More Info"
+      "more-info": "Mais informação"
     },
     "logger-view": {
       "title": "Logs",
-      "empty": "Not logs yet",
+      "empty": "Não existem logs",
       "buttons": {
         "clear": "Limpar logs",
         "scroll": "Navegar para o fundo",
@@ -67,7 +67,7 @@
       }
     },
     "project-select-list": {
-      "empty": "No existing projects",
+      "empty": "Não existem projetos",
       "titles": {
         "favorite": "Projetos favoritos",
         "other": "Outros projetos"
@@ -75,7 +75,7 @@
     },
     "project-select-list-item": {
       "tooltips": {
-        "favorite": "Toggle favorite",
+        "favorite": "Adicionar/Remover dos favoritos",
         "delete": "Remover"
       }
     },
@@ -96,294 +96,294 @@
     },
     "status-bar": {
       "project": {
-        "tooltip": "Current project<br><i>Click to toggle Project Manager</i>",
-        "empty": "No project"
+        "tooltip": "Projeto atual<br><i>Clique para mostrar o Gestor de Projetos</i>",
+        "empty": "Sem projeto"
       },
       "path": {
-        "tooltip": "Current Working Folder"
+        "tooltip": "Pasta de trabalho atual"
       },
       "log": {
-        "tooltip": "Logs<br><i>Click to toggle Vue CLI logs</i>",
-        "empty": "No logs yet"
+        "tooltip": "Logs<br><i>Click para mostrar os logs de Vue CLI</i>",
+        "empty": "Não existem logs"
       },
-      "report-bug": "Report bug"
+      "report-bug": "Reportar bug"
     },
     "terminal-view": {
       "buttons": {
-        "clear": "Clear console",
-        "scroll": "Scroll to bottom"
+        "clear": "Limpar consola",
+        "scroll": "Navegar para o fundo"
       }
     },
     "view-badge": {
       "labels": {
         "tasks": {
-          "error": "Error status",
-          "running": "Running status",
-          "done": "Done status"
+          "error": "Erro",
+          "running": "Em execução",
+          "done": "Concluído"
         }
       }
     }
   },
   "mixins": {
     "progress": {
-      "creating": "Creating project...",
-      "git-init": "Initializing git repository...",
-      "plugins-install": "Installing Vue CLI plugins. This might take a while...",
-      "invoking-generators": "Invoking generators...",
-      "deps-install": "Installing additional dependencies...",
-      "completion-hooks": "Running completion hooks...",
-      "fetch-remote-preset": "Fetching remote preset...",
-      "done": "Successfully created project",
-      "plugin-install": "Installing {arg0}...",
-      "plugin-uninstall": "Uninstalling {arg0}...",
-      "plugin-invoke": "Invoking {arg0}...",
-      "plugin-update": "Updating {arg0}..."
+      "creating": "Criando projeto...",
+      "git-init": "Inicializando repositório git...",
+      "plugins-install": "Instalando plugins Vue CLI. Isto poderá demorar um pouco...",
+      "invoking-generators": "Invocando geradores...",
+      "deps-install": "Instalando dependências adicionais...",
+      "completion-hooks": "Executando hooks para finalizar...",
+      "fetch-remote-preset": "Obtendo preset remoto...",
+      "done": "Projeto criado com sucesso",
+      "plugin-install": "Instalando {arg0}...",
+      "plugin-uninstall": "Desinstalando {arg0}...",
+      "plugin-invoke": "Invocando {arg0}...",
+      "plugin-update": "Atualizando {arg0}..."
     }
   },
   "types": {
     "task": {
       "status": {
-        "idle": "Idle",
-        "running": "Running",
-        "done": "Done",
-        "error": "Error",
-        "terminated": "Terminated"
+        "idle": "Inativo",
+        "running": "Em execução",
+        "done": "Concluído",
+        "error": "Erro",
+        "terminated": "Interrompido"
       }
     }
   },
   "views": {
     "project-select": {
-      "title": "Vue Project Manager",
+      "title": "Gestor de Projetos Vue",
       "tabs": {
-        "projects": "Projects",
-        "create": "Create",
-        "import": "Import"
+        "projects": "Projetos",
+        "create": "Criar",
+        "import": "Importar"
       },
       "buttons": {
-        "create": "Create a new project here",
-        "import": "Import this folder"
+        "create": "Criar um novo projeto aqui",
+        "import": "Importar esta pasta"
       }
     },
     "project-create": {
-      "title": "Create a new project",
+      "title": "Criar um novo projeto",
       "tabs": {
         "details": {
-          "title": "Details",
+          "title": "Detalhes",
           "form": {
             "folder": {
-              "label": "Project folder",
-              "placeholder": "my-app",
-              "tooltip": "Change base folder",
-              "action": "Select this folder"
+              "label": "Pasta do projeto",
+              "placeholder": "minha-app",
+              "tooltip": "Editar pasta de destino",
+              "action": "Selecionar esta pasta"
             },
             "manager": {
-              "label": "Package manager",
-              "default": "Default"
+              "label": "Gestor de pacotes",
+              "default": "Por defeito"
             },
             "options": {
-              "label": "Additional options",
-              "description": "Overwrite target folder if it exists"
+              "label": "Opções adicionais",
+              "description": "Sobrescrever a pasta de destino, se existir"
             }
           },
           "buttons": {
-            "cancel": "Cancel",
-            "next": "Next"
+            "cancel": "Cancelar",
+            "next": "Seguinte"
           },
           "modal": {
-            "title": "Cancel and reset project creation",
-            "body": "Are you sure you want to reset the project creation?",
+            "title": "Cancelar e recomeçar a criação do projeto",
+            "body": "Tem a certeza que deseja reiniciar a criação do projeto?",
             "buttons": {
-              "back": "Go back",
-              "clear": "Clear project"
+              "back": "Retroceder",
+              "clear": "Remover projeto"
             }
           }
         },
         "presets": {
           "title": "Presets",
-          "description": "A preset is an association of plugins and configurations. After you've selected features, you can optionally save it as a preset so that you can reuse it for future projects, without having to reconfigure everything again.",
-          "select": "Select a preset",
+          "description": "Um preset é um conjunto de plugins e configurações predefinidos. Depois de selecionar as funcionalidades, poderá guardar-las como um preset para que possa usar em projetos futuros, sem ter que configurar tudo de novo.",
+          "select": "Selecionar um preset",
           "buttons": {
-            "previous": "Previous",
-            "next": "Next",
-            "create": "Create Project"
+            "previous": "Anterior",
+            "next": "Seguinte",
+            "create": "Criar Projeto"
           },
           "modal": {
-            "title": "Configure Remote preset",
-            "body": "Available soon..."
+            "title": "Configurar o preset remoto",
+            "body": "Disponível em breve..."
           }
         },
         "features": {
-          "title": "Features",
-          "description": "You will be able to add features after the project is created by installing plugins.",
-          "enable": "Enable features",
+          "title": "Funcionalidades",
+          "description": "Poderá adicionar funcionalidades após a criação do projeto, instalando plugins.",
+          "enable": "Ativar funcionalidades",
           "buttons": {
-            "previous": "Previous",
-            "next": "Next",
-            "create": "Create Project"
+            "previous": "Anterior",
+            "next": "Seguinte",
+            "create": "Criar Projeto"
           }
         },
         "configuration": {
-          "title": "Configuration",
+          "title": "Configuração",
           "buttons": {
-            "previous": "Previous",
-            "create": "Create Project"
+            "previous": "Anterior",
+            "create": "Criar Projeto"
           },
           "modal": {
-            "title": "Save as a new preset",
+            "title": "Guardar como um novo preset",
             "body": {
-              "title": "Preset name",
-              "subtitle": "Save the features and configuration into a new preset"
+              "title": "Nome do preset",
+              "subtitle": "Guardar as funcionalidades e configuração como um novo preset"
             },
             "buttons": {
-              "cancel": "Cancel",
-              "continue": "Continue without saving",
-              "create": "Create a new preset"
+              "cancel": "Cancelar",
+              "continue": "Continuar sem guardar",
+              "create": "Criar um novo preset"
             }
           }
         }
       }
     },
     "project-plugins": {
-      "title": "Project plugins",
-      "button": "Add plugin",
-      "heading": "Installed plugins"
+      "title": "Plugins do projeto",
+      "button": "Adicionar plugin",
+      "heading": "Plugins instalados"
     },
     "project-plugins-add": {
-      "title": "Add a plugin",
+      "title": "Adicionar um plugin",
       "plugin": "plugin",
       "tabs": {
         "search": {
-          "label": "Search",
-          "search-input": "Search a plugin",
-          "not-found": "No results found",
+          "label": "Pesquisar",
+          "search-input": "Pesquisar um plugin",
+          "not-found": "Nenhum resultado encontrado",
           "buttons": {
-            "cancel": "Cancel",
-            "install": "Install {target}"
+            "cancel": "Cancelar",
+            "install": "Instalar {target}"
           }
         },
         "configuration": {
-          "label": "Configuration",
-          "heading": "Installation of {target}",
+          "label": "Configuração",
+          "heading": "Instalação de {target}",
           "buttons": {
-            "cancel": "Cancel",
-            "finish": "Finish installation"
+            "cancel": "Cancelar",
+            "finish": "Concluír instalação"
           }
         },
         "diff": {
-          "label": "Files changed"
+          "label": "Ficheiros modificados"
         }
       },
       "modal": {
-        "title": "Uninstall {target}?",
-        "body": "Do you want to uninstall the {target} plugin?",
+        "title": "Desinstalar {target}?",
+        "body": "Deseja desinstalar o plugin {target}?",
         "buttons": {
-          "back": "Go back",
-          "cancel": "Cancel without uninstalling",
-          "uninstall": "Uninstall"
+          "back": "Retroceder",
+          "cancel": "Cancelar sem desinstalar",
+          "uninstall": "Desinstalar"
         }
       }
     },
     "project-configurations": {
-      "title": "Project configuration"
+      "title": "Configuração do projeto"
     },
     "project-configuration-details": {
       "actions": {
-        "cancel": "Cancel changes",
-        "save": "Save changes",
-        "more-info": "More info"
+        "cancel": "Cancelar alterações",
+        "save": "Guardar alterações",
+        "more-info": "Mais informação"
       }
     },
     "project-tasks": {
-      "title": "Project tasks"
+      "title": "Tarefas do projeto"
     },
     "project-task-details": {
       "actions": {
-        "play": "Run task",
-        "stop": "Stop task",
-        "close": "Close"
+        "play": "Executar tarefa",
+        "stop": "Parar tarefa",
+        "close": "Fechar"
       },
-      "command": "Script command",
-      "parameters": "Parameters",
-      "more-info": "More Info",
-      "output": "Output"
+      "command": "Comando de script",
+      "parameters": "Parâmetros",
+      "more-info": "Mais Informação",
+      "output": "Saída"
     },
     "about": {
-      "title": "About",
+      "title": "Sobre",
       "description": "<a href=\"https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-ui\" target=\"_blank\">@vue/cli-ui</a> is a built-in package of vue-cli which opens a full-blown UI.",
       "quote": "Vue-cli 3.x is a complete rewrite, with a lot of new awesome features. You will be to select features like routing, Vuex or Typescript, then add and upgrade building blocks called \"vue-cli plugins\". But having so much more options also means the tool is now more complex and harder to start using. That's why we thought having a full-blown GUI would help discover the new features, search and install vue-cli plugins and unlock more possibilities overall while not being limited by a terminal interface. To sum up, vue-cli will not only allow you to bootstrap a new project easily, but it will also remain useful for ongoing work afterwards!",
-      "links": "Useful links",
-      "back": "Go back"
+      "links": "Links úteis",
+      "back": "Retroceder"
     }
   },
   "vue-webpack": {
     "dashboard": {
       "title": "Dashboard",
-      "open-app": "Open app",
+      "open-app": "Abrir app",
       "webpack-status": {
-        "Success": "Success",
-        "Failed": "Failed",
-        "Compiling": "Compiling",
-        "Invalidated": "Invalidated",
-        "Idle": "Idle"
+        "Success": "Sucesso",
+        "Failed": "Falhou",
+        "Compiling": "Compilando",
+        "Invalidated": "Invalidado",
+        "Idle": "Inativo"
       },
       "build-status": {
         "labels": {
-          "status": "Status",
-          "errors": "Errors",
-          "warnings": "Warnings",
-          "assets": "Assets",
-          "modules": "Modules",
-          "deps": "Dependencies"
+          "status": "Estado",
+          "errors": "Erros",
+          "warnings": "Avisos",
+          "assets": "Ficheiros",
+          "modules": "Módulos",
+          "deps": "Dependências"
         }
       },
       "speed-stats": {
-        "title": "Speed stats"
+        "title": "Estatísticas de velocidade"
       },
       "module-list": {
-        "title": "Dependencies"
+        "title": "Dependências"
       },
       "asset-list": {
-        "title": "Assets",
-        "size-warning": "This asset is big, consider using Code splitting to create smaller assets."
+        "title": "Ficheiros",
+        "size-warning": "Este ficheiro é grande, considere usar Code splitting para criar ficheiros mais pequenos."
       }
     },
     "analyzer": {
-      "title": "Analyzer",
-      "go-up": "Go up",
-      "go-home": "Go to home",
+      "title": "Analisador",
+      "go-up": "Ir para cima",
+      "go-home": "Ir para o início",
       "chunk": "Chunk"
     },
     "sizes": {
-      "stats": "Stats",
-      "parsed": "Parsed",
+      "stats": "Estatísticas",
+      "parsed": "Analisado",
       "gzip": "Gzip",
-      "help": "<b>Stats:</b> size from webpack stats data.<br><b>Parsed:</b> size from extracted source (after minification plugins). More accurate.<br><b>Gzip:</b> size of gzipped extracted source."
+      "help": "<b>Estatísticas:</b> tamanho dos dados estatísticos do webpack.<br><b>Analisado:</b> tamanho do código fonte extraído (após os plugins de minificação). Mais detalhado.<br><b>Gzip:</b> tamanho do código fonte extraído compactado."
     },
     "tasks": {
       "serve": {
-        "description": "Compiles and hot-reloads for development"
+        "description": "Compila e recarrega (hot-reloads) para desenvolvimento"
       },
       "build": {
-        "description": "Compiles and minifies for production"
+        "description": "Compila e reduz para produção"
       }
     }
   },
   "eslint": {
     "config": {
       "eslint": {
-        "description": "Error checking & Code quality",
+        "description": "Verificação de erros e qualidade do código",
         "groups": {
-          "strongly-recommended": "Strongly recommended",
-          "recommended": "Recommended"
+          "strongly-recommended": "Altamente recomendado",
+          "recommended": "Recomendado"
         }
       },
       "eslint-extra": {
-        "description": "Extra ESLint settings"
+        "description": "Configurações ESLint extra"
       }
     },
     "tasks": {
       "lint": {
-        "description": "Lints and fixes files"
+        "description": "Lints e corrige ficheiros"
       }
     }
   },
