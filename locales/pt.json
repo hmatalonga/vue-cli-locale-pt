@@ -1,43 +1,43 @@
 {
   "components": {
     "file-diff": {
-      "binary": "Binary file not shown",
+      "binary": "Ficheiro binário não mostrado",
       "actions": {
-        "open": "Open in editor"
+        "open": "Abrir no editor"
       }
     },
     "file-diff-view": {
-      "files-changed": "Files changed",
-      "search-file": "Search file",
-      "empty": "No change found",
+      "files-changed": "Ficheiros modificados",
+      "search-file": "Pesquisar ficheiro",
+      "empty": "Nenhuma alteração encontrada",
       "modals": {
         "commit": {
-          "title": "Commit changes",
+          "title": "Commit alterações",
           "input": "Enter a commit message",
-          "subtitle": "Record changes to the repository",
+          "subtitle": "Guadar alterações no repositório",
           "actions": {
             "commit": "Commit",
-            "cancel": "Cancel"
+            "cancel": "Cancelar"
           }
         }
       },
       "actions": {
-        "collapse-all": "Collapse all",
-        "expand-all": "Expand all",
-        "commit": "Commit changes",
-        "skip": "Skip",
-        "continue": "Continue",
-        "refresh": "Refresh"
+        "collapse-all": "Fechar tudo",
+        "expand-all": "Expandir tudo",
+        "commit": "Commit alterações",
+        "skip": "Saltar",
+        "continue": "Continuar",
+        "refresh": "Atualizar"
       }
     },
     "folder-explorer": {
       "toolbar": {
         "tooltips": {
           "parent-folder": "Open parent folder",
-          "edit-path": "Edit path",
+          "edit-path": "Editar caminho",
           "favorite": "Toggle favorite",
           "favorite-folders": "Favorite folders",
-          "refresh": "Refresh"
+          "refresh": "Atualizar"
         },
         "placeholder": "Enter the full path to a folder",
         "empty": "No favorite folders yet."
@@ -50,49 +50,49 @@
       "title": "Logs",
       "empty": "Not logs yet",
       "buttons": {
-        "clear": "Clear logs",
-        "scroll": "Scroll to bottom",
-        "close": "Close"
+        "clear": "Limpar logs",
+        "scroll": "Navegar para o fundo",
+        "close": "Fechar"
       }
     },
     "progress-screen": {
-      "close": "Close"
+      "close": "Fechar"
     },
     "project-nav": {
       "tooltips": {
         "plugins": "Plugins",
-        "configuration": "Configuration",
-        "tasks": "Tasks",
-        "more": "More"
+        "configuration": "Configurações",
+        "tasks": "Tarefas",
+        "more": "Mais"
       }
     },
     "project-select-list": {
       "empty": "No existing projects",
       "titles": {
-        "favorite": "Favorite projects",
-        "other": "Other projects"
+        "favorite": "Projetos favoritos",
+        "other": "Outros projetos"
       }
     },
     "project-select-list-item": {
       "tooltips": {
         "favorite": "Toggle favorite",
-        "delete": "Delete"
+        "delete": "Remover"
       }
     },
     "project-plugin-item": {
-      "version": "version",
-      "latest": "latest",
-      "official": "Official",
-      "installed": "Installed",
+      "version": "versão",
+      "latest": "última versão",
+      "official": "Oficial",
+      "installed": "Instalado",
       "actions": {
-        "update": "Update {target}"
+        "update": "Atualizar {target}"
       }
     },
     "prompt-list": {
-      "default": "Default"
+      "default": "Por defeito"
     },
     "prompts-list": {
-      "empty": "No configuration"
+      "empty": "Sem configuração"
     },
     "status-bar": {
       "project": {
