@@ -210,7 +210,16 @@
           "modal": {
             "title": "Configurar o preset remoto",
             "body": "Disponível em breve..."
-          }
+          },
+          "manual": {
+            "name": "Manual",
+            "description": "Selecionar funcionalidades manualmente"
+          },
+          "remote": {
+            "name": "Preset remoto",
+            "description": "Obter um preset a partir de um repositório git"
+          },
+          "default-preset": "Preset por defeito"
         },
         "features": {
           "title": "Funcionalidades",
@@ -220,6 +229,10 @@
             "previous": "Anterior",
             "next": "Seguinte",
             "create": "Criar Projeto"
+          },
+          "userConfigFiles": {
+            "name": "Usar ficheiros de configuração",
+            "description": "Usar ficheiros específicos de configuração (como '.babelrc') em vez de usar 'package.json'."
           }
         },
         "configuration": {
@@ -304,6 +317,7 @@
       },
       "command": "Comando de script",
       "parameters": "Parâmetros",
+      "parameters-info": "Parâmetros serão guardados quando a tarefar executar.",
       "more-info": "Mais Informação",
       "output": "Saída"
     },
@@ -361,10 +375,30 @@
     },
     "tasks": {
       "serve": {
-        "description": "Compila e recarrega (hot-reloads) para desenvolvimento"
+        "description": "Compila e recarrega (hot-reloads) para desenvolvimento",
+        "open": "Abrir browser no arranque do servidor",
+        "mode": "Especificar modo env",
+        "host": "Especificar anfitrião",
+        "port": "Especificar porta",
+        "https": "Usar HTTPS"
       },
       "build": {
-        "description": "Compila e reduz para produção"
+        "description": "Compila e reduz para produção",
+        "mode": "Especificar modo env",
+        "dest": "Pasta de destino",
+        "target": {
+          "description": "Build target",
+          "app": "Web app",
+          "lib": "Biblioteca",
+          "wc": "Componente web",
+          "wc-async": "Componente web async"
+        },
+        "name": "Nome da biblioteca ou modo componente-web (por defeito: 'name' no package.json ou nome de ficheiro)"
+      },
+      "inspect": {
+        "description": "Inspecionar a configuração resolvida do webpack",
+        "mode": "Especificar modo env",
+        "verbose": "Mostrar definições completas de funções na saída"
       }
     }
   },
@@ -378,19 +412,66 @@
         }
       },
       "eslint-extra": {
-        "description": "Configurações ESLint extra"
+        "description": "Configurações ESLint extra",
+        "lintOnSave": {
+          "message": "Lint ao guardar",
+          "description": "Lint ficheiros de código fonte automaticamente ao guardar"
+        }
       }
     },
     "tasks": {
       "lint": {
-        "description": "Lints e corrige ficheiros"
+        "description": "Lints e corrige ficheiros",
+        "noFix": "Não corrigir erros"
       }
     }
   },
   "pwa": {
     "config": {
       "pwa": {
-        "description": "Progressive Web App"
+        "description": "Progressive Web App",
+        "workboxPluginMode": {
+          "message": "Modo plugin",
+          "description": "Permite escolher entre os dois modos subjacente ao `workbox-webpack-plugin`"
+        },
+        "name": {
+          "message": "Nome da app",
+          "description": "Nome da app mostrado no ecrã Splash e outros locais. Também usado como o valor para `apple-mobile-web-app-title` meta tag no HTML gerado."
+        },
+        "themeColor": {
+          "message": "Cor do tema",
+          "description": "Cor usada para personalizar o browser"
+        },
+        "backgroundColor": {
+          "message": "Splash cor de fundo",
+          "description": "Cor de fundo usada no ecrã splash da app"
+        },
+        "msTileColor": {
+          "message": "Cor do bloco (tile) da app no Windows",
+          "description": "Cor usada para o bloco (tile) da app no Windows"
+        },
+        "appleMobileWebAppStatusBarStyle": {
+          "message": "Estilo da barra de estado no Apple mobile",
+          "description": "Estilo para a barra de estado da web app no iOS"
+        }
+      }
+    }
+  },
+  "cypress": {
+    "tasks": {
+      "test": {
+        "description": "Correr testes e2e com `cypress run`",
+        "headless": "Correr em plano de fundo sem GUI",
+        "mode": "Especificar o modo do servidor dev deverá correr",
+        "url": "Correr testes e2e com o url fornecido em vez de auto-iniciar o servidor dev"
+      }
+    }
+  },
+  "nightwatch": {
+    "tasks": {
+      "test": {
+        "description": "Correr testes e2e com nightwatch",
+        "url": "Correr testes e2e com o url fornecido em vez de auto-iniciar o servidor dev"
       }
     }
   }
