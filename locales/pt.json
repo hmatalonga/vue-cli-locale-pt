@@ -393,7 +393,8 @@
           "wc": "Componente web",
           "wc-async": "Componente web async"
         },
-        "name": "Nome da biblioteca ou modo componente-web (por defeito: 'name' no package.json ou nome de ficheiro)"
+        "name": "Nome da biblioteca ou modo componente-web (por defeito: 'name' no package.json ou nome de ficheiro)",
+        "watch": "Observar alterações"
       },
       "inspect": {
         "description": "Inspecionar a configuração resolvida do webpack",
