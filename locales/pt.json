@@ -110,13 +110,17 @@
         "tooltip": "Logs<br><i>Click para mostrar os logs de Vue CLI</i>",
         "empty": "Não existem logs"
       },
-      "report-bug": "Reportar bug"
+      "report-bug": "Reportar bug",
+      "translate": "Ajudar a traduzir"
     },
     "terminal-view": {
       "buttons": {
         "clear": "Limpar consola",
         "scroll": "Navegar para o fundo"
       }
+    },
+    "top-bar": {
+      "no-favorites": "Nenhum projeto favorito"
     },
     "view-badge": {
       "labels": {
