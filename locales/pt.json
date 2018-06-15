@@ -313,7 +313,8 @@
       "actions": {
         "cancel": "Cancelar alterações",
         "save": "Guardar alterações",
-        "more-info": "Mais informação"
+        "more-info": "Mais informação",
+        "refresh": "Atualizar"
       }
     },
     "project-tasks": {
@@ -420,13 +421,16 @@
         "groups": {
           "strongly-recommended": "Altamente recomendado",
           "recommended": "Recomendado"
-        }
-      },
-      "eslint-extra": {
-        "description": "Configurações ESLint extra",
-        "lintOnSave": {
-          "message": "Lint ao guardar",
-          "description": "Lint ficheiros de código fonte automaticamente ao guardar"
+        },
+        "vue": {
+          "label": "Vue"
+        },
+        "extra": {
+          "label": "Extra",
+          "lintOnSave": {
+            "message": "Lint ao guardar",
+            "description": "Lint ficheiros de código fonte automaticamente ao guardar"
+          }
         }
       }
     },
