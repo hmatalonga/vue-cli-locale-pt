@@ -198,7 +198,9 @@
             },
             "options": {
               "label": "Opções adicionais",
-              "description": "Sobrescrever a pasta de destino, se existir"
+              "force": "Sobrescrever a pasta de destino, se existir",
+              "git": "Inicializar repositório git (recomendado)",
+              "git-commit-message": "Mensagem de commit inicial (opcional)"
             }
           },
           "buttons": {
