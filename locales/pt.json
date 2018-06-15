@@ -111,7 +111,8 @@
         "empty": "Não existem logs"
       },
       "report-bug": "Reportar bug",
-      "translate": "Ajudar a traduzir"
+      "translate": "Ajudar a traduzir",
+      "dark-mode": "Alternar modo escuro"
     },
     "terminal-view": {
       "buttons": {
