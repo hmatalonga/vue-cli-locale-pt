@@ -543,5 +543,13 @@
         "update": "Re-gravar cada snaphost que falha durante execução de teste"
       }
     }
+  },
+  "mocha": {
+    "tasks": {
+      "test": {
+        "description": "Correr testes unitários com Mocha",
+        "watch": "Observar alterações a ficheiros e re-executar testes relacionados com os ficheiros alterados"
+      }
+    }
   }
 }
