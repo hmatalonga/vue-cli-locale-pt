@@ -461,6 +461,11 @@
         "description": "Lints e corrige ficheiros",
         "noFix": "Não corrigir erros"
       }
+    },
+    "suggestions": {
+      "open-eslintrc": {
+        "label": "Abrir eslintrc"
+      }
     }
   },
   "pwa": {
