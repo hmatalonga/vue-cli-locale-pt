@@ -497,6 +497,14 @@
           "description": "Estilo para a barra de estado da web app no iOS"
         }
       }
+    },
+    "suggestions": {
+      "open-vue": {
+        "label": "Abrir vue config"
+      },
+      "open-manifest": {
+        "label": "Abrir manifest"
+      }
     }
   },
   "cypress": {
