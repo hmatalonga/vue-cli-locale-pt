@@ -511,5 +511,15 @@
         "url": "Correr testes e2e com o url fornecido em vez de auto-iniciar o servidor dev"
       }
     }
+  },
+  "jest": {
+    "tasks": {
+      "test": {
+        "description": "Correr testes unitários com Jestks",
+        "watch": "Monitorizar alterações a ficheiros e re-executar testes relacionados com os ficheiros alterados",
+        "notify": "Mostrar uma notificação após cada execução",
+        "update": "Re-gravar cada snaphost que falha durante execução de teste"
+      }
+    }
   }
 }
