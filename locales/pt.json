@@ -410,6 +410,7 @@
       "gzip": "Gzip",
       "help": "<b>Estatísticas:</b> tamanho dos dados estatísticos do webpack.<br><b>Analisado:</b> tamanho do código fonte extraído (após os plugins de minificação). Mais detalhado.<br><b>Gzip:</b> tamanho do código fonte extraído compactado."
     },
+    "modern-mode": "Mostrar modern build",
     "tasks": {
       "serve": {
         "description": "Compila e recarrega (hot-reloads) para desenvolvimento",
@@ -424,14 +425,18 @@
         "mode": "Especificar modo env",
         "dest": "Pasta de destino",
         "target": {
-          "description": "Build target",
+          "description": "Alvo de build",
           "app": "Web app",
           "lib": "Biblioteca",
           "wc": "Componente web",
           "wc-async": "Componente web async"
         },
         "name": "Nome da biblioteca ou modo componente-web (por defeito: 'name' no package.json ou nome de ficheiro)",
-        "watch": "Observar alterações"
+        "watch": "Observar alterações",
+        "modern": {
+          "label": "Modo modern",
+          "description": "Criar aplicação direcionada a browsers modernos com fallback automático"
+        }
       },
       "inspect": {
         "description": "Inspecionar a configuração resolvida do webpack",
@@ -533,7 +538,7 @@
     "tasks": {
       "test": {
         "description": "Correr testes unitários com Jestks",
-        "watch": "Monitorizar alterações a ficheiros e re-executar testes relacionados com os ficheiros alterados",
+        "watch": "Observar alterações a ficheiros e re-executar testes relacionados com os ficheiros alterados",
         "notify": "Mostrar uma notificação após cada execução",
         "update": "Re-gravar cada snaphost que falha durante execução de teste"
       }
