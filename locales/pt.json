@@ -359,6 +359,10 @@
         "label": "Adicionar vuex",
         "message": "Solução de gestão de estado centralizado para apps de grande escala."
       },
+      "vue-devtools": {
+        "label": "Instalar devtools",
+        "message": "Browser devtools extensão oficial para debugging de aplicações Vue.js onde pode inspecionar os seus componentes, vuex store e eventos."
+      },
       "progress": "Instalando {arg0}..."
     }
   },
